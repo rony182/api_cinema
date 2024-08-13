@@ -1,0 +1,5 @@
+﻿###
+GET http://localhost:5055/movies
+
+### Get by id
+GET http://localhost:5055/movies/1

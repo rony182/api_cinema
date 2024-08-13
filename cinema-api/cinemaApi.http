@@ -1,0 +1,35 @@
+# For more info on HTTP files go to https://aka.ms/vs/httpfile
+
+GET http://localhost:5055
+
+###
+GET http://localhost:5055/functions
+
+###
+GET http://localhost:5055/functions/1
+
+###
+POST http://localhost:5055/functions
+Content-Type: application/json
+
+{
+    "Date": "2024-08-12",
+    "ScheduleHour": "19:00:00",
+    "Price": 10.10,
+    "MovieId": 7
+}
+
+
+###
+PUT http://localhost:5055/functions/4
+Content-Type: application/json
+
+{
+    "Date": "2024-08-12",
+    "ScheduleHour": "19:00:00",
+    "Price": 11.10,
+    "MovieId": 5
+}
+
+###
+DELETE http://localhost:5055/functions/10
